@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=EcbDesLikeCipher
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=plainText\ key
+comment2.target=java.lang.String\ ecbEncrypt(java.lang.String,\ int)
+comment3.params=plainText
+comment3.target=java.lang.String\ getBinaryPlainText(java.lang.String)
+comment4.params=outputBlocks
+comment4.target=java.lang.String\ assembleCipherText(java.util.ArrayList)
+comment5.params=plainText
+comment5.target=java.util.ArrayList\ splitPlainText(java.lang.String)
+comment5.text=\r\n\ splits\ the\ input\ plainText\ String\ into\ blocks\ of\ 12-bit\ strings\ and\r\n\ converts\ them\ into\ integer\ values\ then\ adds\ them\ to\ an\ ArrayList.\r\n\ \r\n\ @param\ plainText\ binary\ representation\ of\ an\ input\ string\r\n\ @return\ blocks\ ArrayList\ of\ integer\ blocks\ representing\ the\ 12-bit\ strings\r\n
+comment6.params=plainText
+comment6.target=java.util.ArrayList\ splitPlainTextByChar(java.lang.String)
+numComments=7

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CbcDesLikeCipher
+comment1.params=plainText\ key\ iv
+comment1.target=java.lang.String\ cbcEncrypt(java.lang.String,\ int,\ int)
+comment2.params=plainText
+comment2.target=java.lang.String\ getBinaryPlainText(java.lang.String)
+comment2.text=\r\n\tprivate\ long\ getLongPlainText(String\ plainText)\ {\r\n\t\tlong\ long_plainText\ \=\ 0;\r\n\t\tString\ binaryString\ \=\ "";\r\n\t\t\r\n\t\tfor(int\ i\=0;\ i\ <\ plainText.length();\ i++){\r\n\t\t\tint\ ascii\ \=\ (int)plainText.charAt(i);\r\n\t\t\tString\ inBinary\ \=\ Integer.toBinaryString(ascii);\r\n\t\t\ \ \ \ inBinary\ \=\ String.format("%8s",\ inBinary).replace('\ ',\ '0');\r\n\t\t\ \tbinaryString\ +\=\ inBinary;\ \ \ \ \r\n\t\t\ }\r\n\t\t\r\n\t\tlong_plainText\ \=\ Long.valueOf(binaryString,\ 2);\r\n\t\treturn\ long_plainText;\r\n\t}\r\n
+comment3.params=outputBlocks
+comment3.target=java.lang.String\ assembleCipherText(java.util.ArrayList)
+comment4.params=plainText
+comment4.target=java.util.ArrayList\ splitPlainText(java.lang.String)
+comment4.text=\r\n\ splits\ the\ input\ plainText\ String\ into\ blocks\ of\ 12-bit\ strings\ and\r\n\ converts\ them\ into\ integer\ values\ then\ adds\ them\ to\ an\ ArrayList.\r\n\ \r\n\ @param\ plainText\ binary\ representation\ of\ an\ input\ string\r\n\ @return\ blocks\ ArrayList\ of\ integer\ blocks\ representing\ the\ 12-bit\ strings\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

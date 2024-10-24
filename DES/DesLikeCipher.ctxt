@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=DesLikeCipher
+comment1.params=e
+comment1.target=int\ expand(int)
+comment1.text=\r\n\ Implements\ the\ expander\ operation\ from\ the\ algorithm.\ \r\n\ \r\n\ @param\ e\ 6-bits\ number\r\n\ @return\ Expanded\ version\ of\ e\r\n
+comment2.params=s
+comment2.target=int\ s1(int)
+comment2.text=\r\n\ S-box\ one\ for\ the\ DES-like\ algorithm\r\n\ \r\n\ @param\ s\ 4-bit\ input\r\n\ @return\ 3-bit\ substitution\ value\ for\ the\ given\ x\r\n
+comment3.params=s
+comment3.target=int\ s2(int)
+comment3.text=\r\n\ S-box\ two\ for\ the\ DES-like\ algorithm\r\n\ \r\n\ @param\ s\ 4-bit\ input\r\n\ @return\ 3-bit\ substitution\ value\ for\ the\ given\ x\r\n
+comment4.params=f\ k
+comment4.target=int\ f(int,\ int)
+comment4.text=\r\n\ f-function\ for\ the\ DES-like\ algorithm\r\n\ @param\ f\ plaintext\ to\ be\ encrypted\ \ \r\n\ @param\ k\ key\ to\ use\ for\ encryption\r\n\ @return\ f-value\ replacement\ for\ given\ input\r\n
+comment5.params=k\ rnd
+comment5.target=int\ subkey(int,\ int)
+comment5.text=\r\n\ Subkey\ derives\ 8\ bits\ from\ the\ 9\ bits\ input\ by\r\n\ \ \ \ \ counting\ 8\ bits\ starting\ at\ position\ rnd\ \r\n\ For\ example\:\r\n\ \ \ master\ key\ \=\ 110011010\r\n\ k1\ \=\ 11001101\r\n\ k2\ \=\ 10011010\r\n\ k3\ \=\ 00110101\ \#\ 7\ bits\ +\ 1\ bit\ from\ front\r\n\ k4\ \=\ 01101011\ \#\ 6\ bits\ +\ 2\ bits\ from\ front\r\n\ k5\ \=\ 11010110\ \#\ 5\ bits\ +\ 3\ bits\ from\ front\r\n\r\n\ @param\ k\ 9-bit\ master\ key\ to\ derive\ from\r\n\ @param\ rnd\ index\ of\ subkey\r\n\ @return\ 8-bit\ subkey\ derived\ from\ master\ key\ (k)\r\n
+comment6.params=x\ k\ rnd
+comment6.target=int\ round(int,\ int,\ int)
+comment6.text=\r\n\ Performs\ one\ round\ of\ encryption\r\n\ \r\n\ @param\ x\ 12-bit\ plaintext\r\n\ @param\ k\ 9-bit\ key\r\n\ @param\ rnd\ round\ to\ perform\r\n\ @return\ 12-bit\ ciphertext\ for\ given\ round\r\n
+comment7.params=x\ k
+comment7.target=int\ encrypt(int,\ int)
+comment7.text=\r\n\ DES-like\ encryption\ cipher\ for\ homework\r\n\ \r\n\ @param\ x\ 12-bit\ plaintext\r\n\ @param\ k\ 9-bit\ key\r\n\ @return\ 12-bit\ ciphertext\r\n
+comment8.params=args
+comment8.target=void\ main(java.lang.String[])
+numComments=9
